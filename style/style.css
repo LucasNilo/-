@@ -13,7 +13,7 @@
     --cor1: #2E78A6;
     --cor2: #5A90BF;
     --cor3: #464959;
-    --cor3: #A3A4BF;
+    --cor4: #A3A4BF;
 
     --fonte-padrão: Verdana, Arial, Helvetica, sans-serif;
     --fonte-código: 'Doto', cursive;
@@ -25,23 +25,36 @@ body {
     background-color: var(--cor2);
 }
 
+* { 
+    margin: 0px;
+    border: 0px;
+}
+
 header > h1 {
     font-family: var(--fonte-papel);
     text-align: center;
     font-size: 3em;
-    background-color: var(--cor1);
     color: white;
+    padding-bottom: 30px;
+    margin: auto;
+    background-image: linear-gradient(to bottom, var(--cor4), var(--cor3))
 }
 
 main{
     background-color: white;
     min-width: 300px;
-    max-height: 1000px;
+    max-width: 1000px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     padding: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.418);
     margin: auto;
+    text-align: center;
+}
+
+main > article {
+    background-color: var(--cor3);
+    width: 300px;
 }
 
 main > h1 {
@@ -51,8 +64,14 @@ main > h1 {
 
 article {
     box-sizing: 30px;
+    border-radius: 10px;
+    padding: 0.3em;
 }
 
 footer {
-    background-color: var(--cor0);
+   background-color: var(--cor0);
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
 }
